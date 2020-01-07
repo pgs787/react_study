@@ -3,13 +3,11 @@ import About from "./Routes/About.js";
 import Home from "./Routes/Home.js";
 import Detail from "./Routes/Detail.js";
 import Navigation from "./components/Navigation.js";
-import Register from "./components/Register.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Register />
       <Navigation />
       <Switch>
         <Route exact path="/" component={Home} />
